@@ -8,10 +8,10 @@ class Trigonometry implements Serializable {
     double y;
     Trigonometry() { x=0; y=0; }
 
-    void Designer(double x)  {
+    void Designer(double x)    {
         this.x = x;
         y = this.x - Math.sin(this.x); //конструктор решения
-        System.out.println(y); }      }
+        System.out.println(y); }           }
 
 public class Main {
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ public class Main {
         while(true) {
             enter = in.nextLine(); //считывание от начала до конца строки
             try {
-                double x = Double.parseDouble(enter);
+                double x = Double.parseDouble(enter); //возврат нового значения double
                 y.Designer(x); //решение с помощью конструктора
                 }
             catch (Exception ex) {
