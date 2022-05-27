@@ -42,8 +42,8 @@ public class Main {
                                                            }
                 else if (enter.equalsIgnoreCase("u")){  //сравнение двух строк без учёта регистра
 
-                    try (ObjectInputStream ip = new ObjectInputStream(new FileInputStream("output"))) {
-                        y = (Trigonometry) ip.readObject();
+                    try (ObjectInputStream obj = new ObjectInputStream(new FileInputStream("output"))) {
+                        y = (Trigonometry) obj.readObject();
                         System.out.println((char) 27 + "[45mValues restored." + (char)27 + "[0m");          }
                     catch (Exception IOex)   { IOex.getMessage(); }}
                 else if(enter.equalsIgnoreCase("c")){
