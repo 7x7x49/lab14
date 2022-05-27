@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 import java.io.*;
 
-class Trigonometry implements Serializable {
+class Trigonometry implements Serializable {  //сериализовать можно только те объекты, которые реализуют интерфейс Serializable
     double x;
     double y;
     Trigonometry() { x=0; y=0; }
